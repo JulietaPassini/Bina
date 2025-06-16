@@ -1,0 +1,62 @@
+/* Contenedor principal */
+.hour-selector {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.hour-selector h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
+
+/* Lista de horas */
+.hour-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Elemento de hora */
+.hour-item {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Hover en elementos habilitados */
+.hour-item:hover {
+  background-color: #3a769f;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Elemento seleccionado */
+.hour-item.selected {
+  background-color: #3a769f;
+  color: #fff;
+  border-color: #3a769f;
+  font-weight: bold;
+}
+
+/* Elemento deshabilitado */
+.hour-item.disabled {
+  background-color: #ffcccc;
+  color: #a00;
+  cursor: not-allowed;
+  pointer-events: none;
+}
